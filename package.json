@@ -1,0 +1,44 @@
+{
+  "name": "@hook/ajax",
+  "version": "0.1.0",
+  "description": "ajax manager",
+  "browser": "lib/ajax.umd.js",
+  "main": "lib/ajax.cjs.js",
+  "module": "lib/ajax.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hook-packs/ajax.git"
+  },
+  "keywords": [
+    "hook",
+    "ajax"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hook-packs/ajax/issues"
+  },
+  "homepage": "https://github.com/hook-packs/ajax#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "babel-plugin-lodash": "^3.3.4",
+    "rollup": "^2.35.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-filesize": "^9.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {
+    "@hook/hook": "^0.1.1",
+    "axios": "^0.21.1",
+    "core-js": "^3.8.1",
+    "lodash": "^4.17.20"
+  }
+}
